@@ -14,7 +14,7 @@ router.get('/google', passport.authenticate('google', {
 // Google OAuth callback
 router.get('/google/callback', passport.authenticate('google', {
   session: false,
-  failureRedirect: 'http://localhost:5173/login',
+  failureRedirect: `${process.env.FRONTEND_URL}/login`,
 }), (req, res) => {
   const user = req.user as any;
   const token = user.token;
@@ -24,7 +24,7 @@ router.get('/google/callback', passport.authenticate('google', {
     <html>
       <body>
         <script>
-          window.opener.postMessage(${JSON.stringify({ token, user, isFirstTime })}, "http://localhost:5173");
+          window.opener.postMessage(${JSON.stringify({ token, user, isFirstTime })}, "${process.env.FRONTEND_URL}");
           window.close();
         </script>
       </body>
