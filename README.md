@@ -1,7 +1,5 @@
 # Query-2Map
 
-**Team Chirag Semantic Analysis - Full Stack Application**
-
 A comprehensive learning platform with semantic analysis capabilities for educational content.
 
 ## 🚀 Project Overview
@@ -13,6 +11,11 @@ This repository contains the complete source code for the Query-2Map application
 - **Database**: MongoDB Atlas
 - **Authentication**: Google OAuth 2.0
 - **APIs**: Integration with YouTube, SERP, and Groq APIs
+
+Below is a high-level overview of the system architecture:
+
+![System Architecture](s.jpg)
+
 
 ## 🛠️ Tech Stack
 
@@ -172,17 +175,8 @@ The application uses Google OAuth 2.0 for user authentication. Users can sign in
 3. Make your changes
 4. Submit a pull request
 
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 👥 Team
-
-**Team Chirag Semantic Analysis**
 - Advanced semantic analysis for educational content
 - Full-stack development with modern technologies
 - AI-powered learning recommendations
 
 ---
-
-*Built with ❤️ by Team Chirag*
